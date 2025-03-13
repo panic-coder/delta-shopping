@@ -33,6 +33,9 @@ app.use(function (err, req, res, next) {
   res.send(error);
 });
 
+/**
+ * @description This is the health check API.
+ */
 app.get('/api/health-check', (req, res) => {
   res.json(`Yes, I am alive!`);
 });

@@ -4,6 +4,14 @@ const ajv = new Ajv();
 const requestSchema = require('../request-schema/fruit-count-request-schema.js');
 const shoppingService = require('../services/shopping.services.js');
 
+/**
+ * 
+ * @description This is the controller for calculation of total price.
+ * @param {*} req 
+ * @param {*} res 
+ * @param {*} next 
+ * @returns 
+ */
 exports.calculateTotalPrice = async (req, res, next) => {
     try {
         let responseResult = {};

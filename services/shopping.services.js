@@ -1,6 +1,12 @@
 const moment = require('moment');
 const pricesConstant = require('../constants/prices');
 
+/**
+ * 
+ * @description This service calculates the final price as per the basket provided
+ * @param {*} basket It consists of array of fruits in the basket.
+ * @returns 
+ */
 exports.calculateTotal = async (basket) => {
     return new Promise((resolve, reject) => {
         try {
